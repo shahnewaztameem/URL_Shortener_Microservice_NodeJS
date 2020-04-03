@@ -1,6 +1,10 @@
 # API Project: URL Shortener Microservice 
 
 
+This service accepts a URL as a parameter and will check whether it follows the valid https://www.google.com format. If the URL is valid, it will return both the original URL and shortened URL in the JSON response. If it is not valid, the JSON response will contain an error instead. When you visit that shortened URL, it will redirect you to the original link.
+
+
+
 ### User Stories
 
 1. I can POST a URL to `[project_url]/api/shorturl/new` and I will receive a shortened URL in the JSON response. Example : `{"original_url":"www.google.com","short_url":1}`
@@ -18,4 +22,4 @@ POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.googl
 
 #### Will redirect to:
 
-https://www.freecodecamp.org/forum/
+https://www.google.com
